@@ -1,0 +1,46 @@
+body {
+    background-color: cornflowerblue;
+}
+
+.row {
+    margin-left: 0px;
+}
+
+.city-button {
+    width: 65%;
+}
+
+#previous-cities-called {
+    margin: 0;
+}
+
+#main-content {
+    font-weight: bold;
+    margin-left: 0px;
+}
+
+#fiveDayCards {
+    margin-top: 15px;
+}
+
+#forecast-cards {
+    margin-left: 0px;
+}
+
+.card {
+    border: 2px solid black;
+    border-radius: 0.5rem;
+}
+
+.card-body {
+    padding: 1rem;
+    font-weight: lighter;
+}
+
+.badge-color {
+    background-color: goldenrod;
+}
+
+.badge-color {
+    background-color: purple;
+}
