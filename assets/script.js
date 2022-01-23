@@ -130,13 +130,13 @@ function drawPage(cityData) {
   // Heading for City and Date
   $("#currentForecast").html(
     "<h1>" +
-      cityData.day0.name +
-      " (" +
-      currentDate.toLocaleDateString() +
-      ")</h1>" +
-      "<img src=" +
-      iconURL +
-      "><img>"
+    cityData.day0.name +
+    " (" +
+    currentDate.toLocaleDateString() +
+    ")</h1>" +
+    "<img src=" +
+    iconURL +
+    "><img>"
   );
   // Display current temp
   $("#temp").text("Temperature: " + cityData.day0.temperature + " °F");
@@ -147,8 +147,8 @@ function drawPage(cityData) {
   // Display UV index
   $("#uv").html(
     '<div>UV Index: <span id="badge-id" class="badge">' +
-      cityData.day0.uvInd +
-      "</span></div>"
+    cityData.day0.uvInd +
+    "</span></div>"
   );
 
   function addUVcolor(UV) {
@@ -175,9 +175,8 @@ function drawPage(cityData) {
     const nextDay = new Date(currentDate);
     nextDay.setDate(currentDate.getDate() + i);
 
-    const iconSrc = `https://openweathermap.org/img/wn/${
-      cityData[`day${i}`].icon
-    }@2x.png`;
+    const iconSrc = `https://openweathermap.org/img/wn/${cityData[`day${i}`].icon
+      }@2x.png`;
     const temp = cityData[`day${i}`].temperature;
     const humidity = cityData[`day${i}`].humidity;
     forecastCardTemplate += `<div class="card" style="width: 9rem;"><div class="card-body"><div class="card-title">${nextDay.toLocaleDateString()}</div><img id="forecastIcon" src=${iconSrc}><img><div class="card-text">Temp: ${temp} °F</div><div class="card-text">Humidity: ${humidity}%</div></div></div>`;
